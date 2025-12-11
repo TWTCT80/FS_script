@@ -1,0 +1,50 @@
+Välkommen till mitt RECON script för att kontrollera en Linux-miljö
+
+=== SYSTEMINFO ===
+Linux kali 6.16.8+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.16.8-1kali1 (2025-09-24) x86_64 GNU/Linux
+
+=== RAM INFO ===
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       3.0Gi       6.5Gi       224Mi       2.4Gi       8.4Gi
+Swap:          953Mi          0B       953Mi
+
+=== DISKUTRYMME (Root) ===
+Använt: 45% | Ledigt: 42G
+
+=== AKTUELL ANVÄNDARE ===
+kali
+
+=== ANVÄNDARE MED SHELL ===
+root:x:0:0:root:/root:/bin/bash
+postgres:x:126:130:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+kali:x:1000:1000::/home/kali:/usr/bin/zsh
+
+=== NÄTVERK ===
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host noprefixroute 
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute eth0
+    inet6 fd17:625c:f037:2:f40d:7d2e:ccc2:2fec/64 scope global dynamic noprefixroute 
+    inet6 fe80::b6fa:a3b0:a7cf:4a18/64 scope link noprefixroute 
+
+=== PUBLIK IP ===
+95.201.214.111
+
+=== IP Route ===
+default via 10.0.2.2 dev eth0 proto dhcp src 10.0.2.15 metric 100 
+10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 metric 100 
+
+=== Netstat ===
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                           
+udp   UNCONN 0      0        224.0.0.251:5353      0.0.0.0:*    users:(("brave",pid=5228,fd=47)) 
+udp   UNCONN 0      0        224.0.0.251:5353      0.0.0.0:*    users:(("brave",pid=5188,fd=253))
+tcp   LISTEN 0      80         127.0.0.1:3306      0.0.0.0:*                                     
+tcp   LISTEN 0      200        127.0.0.1:5432      0.0.0.0:*                                     
+tcp   LISTEN 0      511                *:4942            *:*    users:(("code",pid=3328,fd=26))  
+tcp   LISTEN 0      200            [::1]:5432         [::]:*                                     
+
+=== UPPTID ===
+up 2 hours, 57 minutes
+
+=== TIME AND DATE ===
+Thu Dec 11 03:31:24 AM EST 2025
+
