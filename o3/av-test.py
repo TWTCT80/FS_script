@@ -4,6 +4,7 @@ import platform
 
 system = platform.system()
 
+#Kontroll av OS
 if system == "Windows":
     print("Windows upptäckt. Scriptet fortsätter...")
 
