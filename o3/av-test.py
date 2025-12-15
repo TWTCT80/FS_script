@@ -27,14 +27,17 @@ eicar_str = r"X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+
 desktop = Path.home() / "Desktop"
 file_path = desktop / "test.txt"
 
+#Skapa filen på skrivbordet
 with open(file_path, "w", encoding="utf-8") as f:
     f.write(eicar_str)
 
 time.sleep(3)
 
+#Kontrollera om filen finns kvar
 try:
     with open(file_path, "r") as f:
         content = f.read()
+        print("Filen finns kvar!")
 
 except OSError as e:
     print("Kunde inte läsa filen")
